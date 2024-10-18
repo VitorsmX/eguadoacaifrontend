@@ -8,6 +8,9 @@ import ZoomModal from '../ZoomModal'
 import ServicesCarousel from './Services'
 
 const Promotions = memo((props) => {
+  if(!props && !props.products && props.products.length === 0) {
+    return null
+  }
   const {title, products, cta} = props
   const productsResolved = useMemo(() => products && products._type === 'promotionProduct' ? products : products.filter(product => product._type === 'promotionProduct').map(product => ({...product, _type: 'promotionProduct'}) ), [products]) 
   const titleServices = props?.titleServices || 'Facilidades/ Serviços'

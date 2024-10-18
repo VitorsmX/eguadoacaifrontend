@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import BenefitsList from '../BenefitsList';
 
 const Benefits = memo((props) => {
+  if(!props && !props.benefits && props.benefits.length === 0) {
+    return null
+  }
   const {benefits, title} = props
   return (
     <section className="flex flex-col items-center justify-center py-16">

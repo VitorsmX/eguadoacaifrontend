@@ -4,6 +4,9 @@ import SimpleBlockContent from '../SimpleBlockContent'
 import styles from './TextSection.module.css'
 
 function TextSection(props) {
+  if(!props || !props.heading) {
+    return null
+  }
   const {heading, label, text} = props
 
   return (

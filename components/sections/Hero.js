@@ -6,6 +6,9 @@ import Cta from '../Cta'
 import imageBuilder from '@/utils/imageBuilder'
 
 const Hero = memo((props) => {
+  if(!props || !props.heading) {
+    return null
+  }
   const {heading, backgroundImage, tagline, ctas} = props
   console.log(heading)
 

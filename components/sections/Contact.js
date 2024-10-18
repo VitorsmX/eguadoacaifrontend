@@ -2,6 +2,9 @@ import { memo } from 'react'
 import propTypes from 'prop-types'
 
 const Contacts = memo((props) => {
+  if(!props || !props.socialMedia) {
+    return null
+  }
   const {socialMedia, phone, location, email, title} = props
 
   return (

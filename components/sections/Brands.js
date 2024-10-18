@@ -5,6 +5,10 @@ import {memo, useEffect} from 'react'
 
 const Brands = memo((props) => {
 
+  if(!props && !props.imageList && props.imageList.length === 0) {
+    return null
+  }
+
   useEffect(() => {
     const textElement = document.querySelector('.text-reflex');
     textElement.addEventListener('mouseenter', () => {

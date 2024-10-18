@@ -7,6 +7,9 @@ import SimpleBlockContent from './SimpleBlockContent'
 import {getPathFromSlug, slugParamToPath} from '../utils/urls'
 
 const Footer = memo((props) => {
+  if(!props && !props.navItems && props.navItems.length === 0) {
+    return null
+  }
   const {navItems, text, router} = props
   return (
     <div className={styles.root}>

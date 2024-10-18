@@ -63,7 +63,7 @@
   backdrop-filter: blur(1px);
   @media (max-width: 768px) {
     margin-left: 2%;
-    width: 95%;
+    width: 90%;
     padding: 0 0.5em 1em 0.5em;
   }
 }
@@ -94,6 +94,9 @@
   margin-top: 0.5em;
   margin-bottom: 1rem;
   text-shadow: var(--text-shadow-outline-thin);
+  width: 55%;
+  text-wrap: wrap;
+  text-align: center;
 
   @media (--media-min-medium) {
     font-size: var(--font-large-size);

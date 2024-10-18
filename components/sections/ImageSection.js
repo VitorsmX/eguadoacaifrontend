@@ -7,6 +7,11 @@ import imageBuilder from '@/utils/imageBuilder'
 import Image from 'next/image'
 
 const ImageSection = memo((props) => {
+
+  if(!props || !props.heading) {
+    return null
+  }
+
   const {heading, label, text, image, cta} = props
 
   if (!image) {

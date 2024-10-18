@@ -3,6 +3,10 @@ import propTypes from 'prop-types';
 
 const FaqSection = memo((props) => {
 
+  if(!props || !props.faqs || props.faqs.length === 0) {
+    return null
+  }
+
   const { title, faqs } = props
 
   return (
