@@ -53,7 +53,7 @@ const ServicesCarousel = memo(({ title, services }) => {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        <div className="flex flex-col justify-center items-center service-card border border-purple-800 rounded-lg shadow-md p-4 gap-y-3 bg-[#40244b79]">
+        <div className="flex flex-col justify-center items-center service-card border border-purple-800 rounded-lg shadow-md p-4 gap-y-3 bg-[#b53fe479]">
           <Image
             src={imageBuilder(currentService.image, 500, 500, 'png')}
             alt={currentService.title}

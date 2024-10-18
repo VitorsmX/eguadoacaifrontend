@@ -27,7 +27,7 @@ const Testimonials = memo((props) => {
               return (
                 <div
                   key={testimonial._key}
-                  className="flex flex-col justify-center items-center bg-[#351947c0] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
+                  className="flex flex-col justify-center items-center bg-[#b53fe479] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
                 >
                 
                   <VideoPlayer videoUrl={ testimonial.video.asset.url } />

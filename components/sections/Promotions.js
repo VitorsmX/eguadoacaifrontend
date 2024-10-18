@@ -70,7 +70,7 @@ const Promotions = memo((props) => {
       <div className="relative w-full flex justify-center items-center">
         {currentProduct && (
           <div
-            className="flex flex-col items-center justify-center border border-solid border-gray-400 bg-[#4b3650] rounded-lg overflow-hidden shadow-md w-64 cursor-pointer hover:scale-[1.02] transition-all duration-500 px-6 flex-grow-[0.3] text-gray-200"
+            className="flex flex-col items-center justify-center border border-solid border-gray-400 bg-[#89349e] rounded-lg overflow-hidden shadow-md w-64 cursor-pointer hover:scale-[1.02] transition-all duration-500 px-6 flex-grow-[0.3] text-gray-200"
             onClick={() => openModal(currentProduct)}
           >
           <div className='flex justify-center bg-white p-4 w-full h-fit'>

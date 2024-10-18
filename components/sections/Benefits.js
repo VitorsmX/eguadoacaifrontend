@@ -12,7 +12,7 @@ const Benefits = memo((props) => {
       <h2 className="text-xl sm:text-3xl font-bold mb-8">
         {title ? title : 'Benefícios de Comprar com a Gente'}
       </h2>
-      <div className="space-y-8 sm:w-4/5 w-[90%] text-gray-200">
+      <div className="space-y-12 sm:w-4/5 w-[90%] text-gray-200">
         <BenefitsList benefitsList={benefits}></BenefitsList>
       </div>
     </section>

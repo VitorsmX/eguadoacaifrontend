@@ -51,7 +51,7 @@ const Form = memo((props: any) => {
         >
           {({values, handleChange, handleBlur}) => {
             return (
-              <FormHelper id='formLead1' key={title} className="space-y-6 p-8 bg-[#205ac53d] max-sm:w-4/5 rounded-lg shadow-lg max-w-lg mx-auto">
+              <FormHelper id='formLead1' key={title} className="space-y-6 p-8 bg-[#2a64ce69] max-sm:w-4/5 rounded-lg shadow-lg max-w-lg mx-auto">
                 <h1 className="text-3xl font-bold text-center">{title}</h1>
                 {fields &&
                   fields.map((field, index) => (
@@ -70,7 +70,7 @@ const Form = memo((props: any) => {
                           value={values.fullName}
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         />
                         <ErrorMessage
                           name="fullName"
@@ -87,7 +87,7 @@ const Form = memo((props: any) => {
                           value={values.email}
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         />
                         <ErrorMessage
                           name="email"
@@ -106,7 +106,7 @@ const Form = memo((props: any) => {
                           value={values.phone}
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         />
                         <ErrorMessage
                           name="phone"
