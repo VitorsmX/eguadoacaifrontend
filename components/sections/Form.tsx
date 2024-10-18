@@ -70,7 +70,7 @@ const Form = memo((props: any) => {
                           value={values.fullName}
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-gray-800"
                         />
                         <ErrorMessage
                           name="fullName"
@@ -87,7 +87,7 @@ const Form = memo((props: any) => {
                           value={values.email}
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-gray-800"
                         />
                         <ErrorMessage
                           name="email"
@@ -106,7 +106,7 @@ const Form = memo((props: any) => {
                           value={values.phone}
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-700 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-gray-800"
                         />
                         <ErrorMessage
                           name="phone"
