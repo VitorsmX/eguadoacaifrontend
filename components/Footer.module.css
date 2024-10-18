@@ -1,0 +1,40 @@
+.root {
+  color: var(--color-white, #dfd8d8);
+  font-size: var(--font-small-size);
+  line-height: var(--font-small-line-height);
+  padding: 2rem 0;
+  background-color: #000000b2;
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 3rem;
+  padding: 0;
+}
+
+.item {
+  & > a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1.5rem 0.5rem;
+    &[data-is-active='true'] {
+      font-weight: bold;
+    }
+  }
+}
+
+.text {
+  margin: 0 20%;
+  text-align: center;
+
+  & p {
+    margin: 1rem 0;
+  }
+
+  & a {
+    color: inherit;
+  }
+}
