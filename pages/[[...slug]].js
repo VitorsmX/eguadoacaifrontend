@@ -138,6 +138,11 @@ const LandingPage = (props) => {
         canonical={config.url && `${config.url}/${slug}`}
         openGraph={{
           images: openGraphImages,
+          type: 'website',
+          url: config.url && `${config.url}/${slug}`,
+          title: config.siteTitle,
+          description: description,
+          site_name: config.siteTitle,
         }}
         noindex={disallowRobots}
       />
