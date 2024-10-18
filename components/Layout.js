@@ -14,6 +14,11 @@ import { SpeedInsights } from '@vercel/speed-insights/react'
 function Layout(props) {
   const router = useRouter()
   const {config, children} = props
+  const ogImages = props && props.ogImages ? props.ogImages : [{
+    url: '/logo.png',
+    width: 600,
+    height: 600,
+  }]
 
   if (!config) {
     console.error('Missing config')
@@ -36,6 +41,9 @@ function Layout(props) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width, viewport-fit=cover" />
         <meta charSet="utf-8" />
         <link rel="icon" href={pageIconUrl ? pageIcon.asset.url : '/logo.png'} type="image/x-icon" />
+        <meta property="og:image" content={ogImages[2].url} />
+        <meta property="og:image:width" content={ogImages[2].width} />
+        <meta property="og:image:height" content={ogImages[2].height} />
       </Head>
         <div className="container" style={{paddingLeft: 0, paddingRight: 0}}>
           <Header title={title} navItems={navItems} socialLinks={socialLinks} logo={logo} />

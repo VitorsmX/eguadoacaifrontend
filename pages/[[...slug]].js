@@ -141,7 +141,7 @@ const LandingPage = (props) => {
         }}
         noindex={disallowRobots}
       />
-      {content && <RenderSections sections={content} />}
+      {content && <RenderSections sections={content} ogImages={openGraphImages} />}
     </Layout>
   )
 }
